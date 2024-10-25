@@ -1,0 +1,8 @@
+.mega_menu {
+    width: 1000px; 
+    height: auto; 
+    max-height: 1000px; 
+    overflow: auto; 
+    padding: 15px;
+    z-index: 1000;
+}

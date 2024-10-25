@@ -1,0 +1,150 @@
+<div class="container">
+    <div class="breadcrumbs">
+<a href="index-1.html"><i class="las la-home"></i></a>
+        <a href="#">Shop</a>
+        <a href="#" class="active">Payment</a>
+    </div>
+</div>
+
+<!-- payment methods -->
+<div class="cart_area section_padding_b">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mb-4">
+                <h4 class="shop_cart_title ps-4">Selecciona el método de pago
+                </h4>
+
+                <div class="payment_method_options">
+                    <div class="single_payment_method active" data-target=".credit_card">
+                        <div class="sp_img">
+                            <img loading="lazy" style="width: 70px;" src="assets/images/logos/master.png" alt="credit card">
+                        </div>
+                        <p class="sp_text">Credit Card</p>
+                    </div>
+                    <div class="single_payment_method" data-target=".pay_pal">
+                        <div class="sp_img">
+                            <img loading="lazy" style="width: 70px;"  src="assets/images/logos/paypal.png" alt="paypal">
+                        </div>
+                        <p class="sp_text">Paypal</p>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-xl-10">
+
+                        <div class="payment_methods credit_card active">          
+                            <div class="payment_method_title">
+                                <h4>Credit Card</h4>
+                                <div class="payment_method_img">
+                                     <div class="d-flex credit_crd">
+                                         <img loading="lazy" style="width: 60px; height: 40px;"  src="assets/images/logos/visa.png" alt="Visa card">
+                                         <img loading="lazy" style="width: 60px; height: 40px;"  src="assets/images/logos/master.png" alt="Master card">
+                                         <img loading="lazy"  style="width: 60px; height: 40px;" src="assets/images/logos/american.png" alt="American express">
+                                     </div>
+                                </div>
+                            </div>   
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="single_billing_inp">
+                                        <label for="company_name">Número de tarjeta
+                                            <span>*</span></label>
+                                        <input type="text" id="company_name">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="single_billing_inp">
+                                        <label for="county_region">Nombre en la tarjeta
+                                            <span>*</span></label>
+                                        <input type="text" id="county_region">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="single_billing_inp">
+                                        <label for="first_name">Fecha de Expiración
+                                            <span>*</span></label>
+                                        <input type="text" class="" id="first_name" placeholder="MM/YY">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="single_billing_inp">
+                                        <label for="last_name">CVV <span>*</span></label>
+                                        <input type="text" class="" id="last_name">
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button class="default_btn rounded">Pagar Ahora</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="payment_methods pay_pal">          
+                            <div class="payment_method_title">
+                                <h4>Paypal</h4>
+                                <div class="payment_method_img">
+                                     <div class="d-flex">
+                                         <img loading="lazy" style="width: 60px; height: 40px;"  src="assets/images/logos/paypalLogo.png" alt="paypal">
+                                     </div>
+                                </div>
+                            </div>   
+                            <div class="text-center mt-4">
+                                <p>Pago usando tu PayPal</p>
+                                <a href="https://www.paypal.com/signin" class="default_btn rounded">Pagar Ahora</a>
+                              </div>
+                        </div>
+
+                        <div class="payment_methods cash_on">          
+                            <div class="payment_method_title">
+                                <h4>Cash On delivery</h4>
+                                <div class="payment_method_img">
+                                     <div class="d-flex">
+                                        <img loading="lazy"  src="assets/images/cash-on.png" alt="cash on delivery">
+                                     </div>
+                                </div>
+                            </div>   
+                            <div class="text-center mt-4 cash_on_text">
+                                <p>you can pay in cash to our courier 
+                                    when you receive the goods at your doorstep.</p>
+                                <button class="default_btn rounded">Confirm order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-6">
+                <h4 class="shop_cart_title ps-3">Tu pedido</h4>
+                <div class="checkout_order mt-4">
+                    <h4>Producto</h4>
+                    <div *ngFor="let item of cartItems" class="single_check_order">
+                        <div class="checkorder_cont">
+                            <h5>{{ item.name }}</h5>
+                            <p *ngIf="item.size">Tamaño: {{ item.size }}</p>
+                            <p *ngIf="item.color">Color: {{ item.color }}</p>
+                        </div>
+                        <p class="checkorder_qnty">x{{ item.quantity }}</p>
+                        <p class="checkorder_price">${{ item.price.toFixed(2) }}</p>
+                    </div>
+                    <div class="single_check_order subs">
+                        <div class="checkorder_cont subtotal-h">
+                            <h5>Subtotal</h5>
+                        </div>
+                        <p class="checkorder_price">${{ total.toFixed(2) }}</p>
+                    </div>
+                    <div class="single_check_order subs">
+                        <div class="checkorder_cont subtotal-h">
+                            <h5>Envío</h5>
+                        </div>
+                        <p class="checkorder_price">Gratis</p>
+                    </div>
+                    <div class="single_check_order total">
+                        <div class="checkorder_cont">
+                            <h5>Total</h5>
+                        </div>
+                        <p class="checkorder_price">${{ total.toFixed(2) }}</p>
+                    </div>
+                   
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

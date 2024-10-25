@@ -351,9 +351,9 @@
         });
 
         // popup show
-        setTimeout(function(){
-            $('.popup_wrap').addClass('active')
-        }, 2000);
+        //setTimeout(function(){
+          //  $('.popup_wrap').addClass('active')
+        //}, 2000);
         
         $('.close_popup').on('click', function(){
             $('.popup_wrap').removeClass('active')

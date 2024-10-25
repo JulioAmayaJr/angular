@@ -11,6 +11,11 @@ export const routes: Routes = [
     loadChildren: () => import('./modules/auth-profile/auth-profile.module').then(m => m.AuthProfileModule)
   },
   {
+    path: 'product',
+    loadChildren: () => import('./modules/products/products.module').then(m => m.ProductsModule)
+  },
+  
+  {
     path: '',
     redirectTo: '/',
     pathMatch: 'full'

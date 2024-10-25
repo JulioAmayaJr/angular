@@ -17,25 +17,25 @@
                             <div class="col-12">
                                 <div class="single_billing_inp">
                                     <label>Email Address <span>*</span></label>
-                                    <input type="email" placeholder="example@mail.com">
+                                    <input type="email" [(ngModel)]="email" name="email" placeholder="example@mail.com">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="single_billing_inp">
                                     <label>Password <span>*</span></label>
-                                    <input type="password" placeholder="type password">
+                                    <input type="password" [(ngModel)]="password" name="password" placeholder="type password">
                                 </div>
                             </div>
                             <div class="col-12 mt-2 d-flex justify-content-between align-items-center">
                                 <div class="custom_check check_2 d-flex align-items-center">
-                                    <input type="checkbox" class="check_inp" hidden id="save-default">
+                                    <input type="checkbox" name="checkbox"  class="check_inp" hidden id="save-default">
                                     <label for="save-default">Remember Me</label>
                                 </div>
 
                                 <a href="forgot-password.html" class="text-color">Forgot Password?</a>
                             </div>
                             <div class="col-12 mt-3">
-                                <button type="submit" class="default_btn xs_btn rounded px-4 d-block w-100">Login</button>
+                                <button type="submit" (click)="login()" class="default_btn xs_btn rounded px-4 d-block w-100">Login</button>
                             </div>
 
                         </div>

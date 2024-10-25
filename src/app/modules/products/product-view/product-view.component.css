@@ -1,0 +1,8 @@
+.pv_tab_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #F0F0F0;
+    margin-bottom: 32px;
+}

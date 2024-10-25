@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-declare var $: any;
-declare function appInit([]): any;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,9 +7,6 @@ declare function appInit([]): any;
 })
 export class AppComponent {
   title = 'Julio Shop';
-  constructor() {
-    setTimeout(() => {
-      appInit($);
-    }, 50); 
-  }
+  
+ 
 }

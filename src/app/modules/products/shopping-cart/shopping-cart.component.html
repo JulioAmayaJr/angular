@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="breadcrumbs">
+        <a routerLink=""><i class="las la-home"></i></a>
+        <a routerLink="/product/shopping-cart" class="active">Shopping Cart</a>
+    </div>
+</div>
+
+<!-- shopping cart -->
+<div class="cart_area section_padding_b" *ngIf="cartItems.length > 0; else emptyCart">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <h4 class="shop_cart_title sopcart_ttl d-none d-lg-flex">
+                    <span>Producto</span>
+                    <span>Cantidad</span>
+                    <span>Precio Total</span>
+                </h4>
+                <div class="shop_cart_wrap">
+                    <div class="single_shop_cart d-flex align-items-center flex-wrap" *ngFor="let item of cartItems">
+                        <div class="cart_img mb-4 mb-md-0">
+                            <img loading="lazy" [src]="'assets/images/' + item.image" alt="product">
+                        </div>
+                        <div class="cart_cont">
+                            <a href="product-view.html">
+                                <h5>{{ item.name }}</h5>
+                            </a>
+                            <p class="price">{{ item.price | currency }}</p>
+                            <p *ngIf="item.size!=null" class="size mb-0">Size: {{ item.size }}</p>
+                        </div>
+                        <div class="cart_qnty d-flex align-items-center ms-md-auto">
+                            <div class="cart_qnty_btn" (click)="decreaseQuantity(item)">
+                                <i class="las la-minus"></i>
+                            </div>
+                            <div class="cart_count">{{ item.quantity }}</div>
+                            <div class="cart_qnty_btn" (click)="increaseQuantity(item)">
+                                <i class="las la-plus"></i>
+                            </div>
+                        </div>
+                        <div class="cart_price ms-auto">
+                            <p>{{ (item.price * item.quantity) | currency }}</p>
+                        </div>
+                        <div class="cart_remove ms-auto" (click)="removeItem(item.productId)">
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-4 mt-lg-0">
+                <div class="cart_summary">
+                    <h4>Resumen Del Pedido</h4>
+                     <div class="cartsum_text d-flex justify-content-between">
+                         <p class="text-semibold">Subtotal</p>
+                         <p class="text-semibold">{{ total | currency }}</p>
+                     </div>
+                     <div class="cartsum_text d-flex justify-content-between">
+                        <p>Envio</p>
+                        <p *ngIf="total>=50">Gratis</p>
+                        <p *ngIf="total<50" >$3.00</p>
+                    </div>
+                    
+                    <div class="cart_sum_total d-flex justify-content-between">
+                        <p>Total</p>
+                         <p>{{ total | currency }}</p>
+                    </div>
+                    <div class="cart_sum_coupon">
+                        <input type="text" placeholder="Ingrese cupon">
+                        <button>aplicar</button>
+                    </div>
+                    <div class="cart_sum_pros">
+                        <button routerLink="/product/checkout">Pasar a la verificacion</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #emptyCart>
+    <div class="container">
+        <h3>Tu carrito esta vacio.</h3>
+    </div>
+</ng-template>

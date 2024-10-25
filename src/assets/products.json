@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "titulo": "Super-Mario-Party-Jamboree",
+        "name":"Super Mario Party Jamboree" ,
+        "descripcion": "Super Mario Party Jamboree​ es un videojuego de fiestas desarrollado por NDcube y publicado por Nintendo para Nintendo Switch. Se trata de la decimotercera entrega para consolas domésticas de la serie Mario Party, la tercera para Nintendo Switch y el sucesor de Super Mario Party.",
+        "price": 31.74,
+        "category":"Plataforma",
+        "subCategory":"Nintendo Switch",
+        "discount":"50%",
+        "priceDev":"63.49",
+        "material":"Plastico",
+        "weight":"1,41 Onzas",
+        "about":[
+            "Prepárate para la fiesta más grande hasta ahora en Super Mario Party Jamboree para Nintendo Switch. Desde correr a través de tirounds hasta minigolf de control de movimiento, este jamboree está repleto de más de 110 minijuegos, ¡la mayor cantidad de cualquier juego de Mario Party hasta la fecha!",
+            "Con siete tablas en total, puedes seguir el flujo en Goomba Lagoon, buscar estrellas en Rainbow Galleria, volver a visitar los clásicos de Western Land y el Castillo Rainbow de Mario de títulos anteriores y más.",
+            "Corre a través del tablero del partido en Koopathlon, una competencia en línea para 20 jugadores de la serie para ver quién puede acumular las puntuaciones más altas en minijuegos como el cambio de carril acelerado. Cuanto mayor sea tu puntuación en cada ronda, más rápido llegarás a la meta. Koopathlon es solo uno de una gran cantidad de modos adicionales: ¡hay algo para que cada tipo de jugador de Mario Party disfrute!"
+        ],
+        "image":"super-mario-party/1.jpg",
+        "images": [
+            "assets/images/super-mario-party/1.jpg",
+            "assets/images/super-mario-party/2.jpg",
+            "assets/images/super-mario-party/3.jpg",
+            "assets/images/super-mario-party/4.jpg",
+            "assets/images/super-mario-party/5.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "titulo": "sonic-x-shadow",
+        "name":"Sonic X Shadow",
+        "category":"Plataforma",
+        "subCategory":"Sega",
+        "material":"Plastico",
+        "weight":"1,41 Onzas",
+        "descripcion": "Shadow Generations​ es un próximo videojuego de plataformas desarrollado por el Sonic Team y publicado por Sega. Shadow the Hedgehog es el segundo juego de Sonic the Hedgehog protagonizado por Shadow the Hedgehog.",
+        "price": 50.00,
+        "image":"sonic-x-shadow/1.jpg",
+        "about":[
+            "¡El pasado se encuentra con el presente en SONIC GENERATIONS! ¡Sonic moderno y clásico se unen para derrotar al Dr. Eggman y el Devorador de Tiempo para restaurar su línea de tiempo a la normalidad!",
+            "Gira el tablero a través de una colección de grandes éxitos de versiones 3D y 2D de escenarios icónicos de juegos anteriores de Sonic, ahora con imágenes actualizadas y cinemáticas reelaboradas",
+            "En esta nueva campaña independiente, Black Doom ha resurgido y amenaza con apoderarse del mundo. Shadow debe viajar a su pasado, enfrentarse a sus recuerdos y desbloquear nuevos poderes oscuros para salvar el mundo.",
+        "Aprovecha los nuevos poderes de Doom de Shadow para luchar contra hordas de enemigos y enfrentar desafíos de plataformas como nunca antes. ¡Navega en el agua, vuela sobre obstáculos y detén el tiempo con el regreso de Chaos Control!"],
+        "images": [
+            "assets/images/sonic-x-shadow/1.jpg",
+            "assets/images/sonic-x-shadow/2.jpg",
+            "assets/images/sonic-x-shadow/3.jpg",
+            "assets/images/sonic-x-shadow/4.jpg",
+            "assets/images/sonic-x-shadow/5.jpg",
+            "assets/images/sonic-x-shadow/6.jpg",
+            "assets/images/sonic-x-shadow/7.jpg"
+
+        ]
+    },
+    {
+        "id": 3,
+        "titulo": "spongebob",
+        "name":"SpongeBob The Patrick Game",
+        "category":"Plataforma",
+        "subCategory":"PHL Collective",
+        "material":"Plastico",
+        "weight":"1,41 Onzas",
+        "descripcion": "The Patrick Star Game es un videojuego de Bob Esponja desarrollado por PHL Collective y publicado por Outright Games.",
+        "price": 36.00,
+        "priceDev":39.99,
+        "discount":"10%",
+        "about":[
+            "¡ESTE ES PATRICK! - Crea un caos hilarante en el mundo abierto de Bikini Bottom",
+            "Diversión con la física: toma las cosas y empújalas a otro lugar. ¡Física!",
+            "Estilos icónicos: desbloquea los atuendos clásicos de Patrick con tus trucos locos y coleccionables",
+            "Todo el mundo está aquí: sé tonto con Bob Esponja, Calamardo, Sandy y más"
+        ],
+        "image":"spongeBob/1.jpg",
+        "images": [
+            "assets/images/spongeBob/1.jpg",
+            "assets/images/spongeBob/2.jpg",
+            "assets/images/spongeBob/3.jpg",
+            "assets/images/spongeBob/4.jpg",
+            "assets/images/spongeBob/5.jpg",
+            "assets/images/spongeBob/6.jpg",
+            "assets/images/spongeBob/7.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "titulo":"dbz-sparking-zero",
+        "name": "DRAGON BALL Sparking ZERO",
+        "category":"Plataforma",
+        "subCategory":"Play Station 5",
+        "material":"Plastico",
+        "weight":"1,41 Onzas",
+        "descripcion": "DRAGON BALL: Sparking! ZERO lleva a un nuevo nivel el legendario estilo de juego de la serie Budokai Tenkaichi. Aprende a dominar a diversos personajes jugables, cada uno con sus habilidades, transformaciones y técnicas propias. Libera tu espíritu de lucha y pelea en escenarios que se derrumban y reaccionan a tu poder a medida que el combate se recrudece.",
+        "price": 69.99,
+        "image":"dbz/1.jpg",
+        "about":[
+            "Participa en batallas 3D de alta velocidad que se mantienen fieles a la serie de anime y videojuegos",
+            "Este juego contiene imágenes impresionantes y movimientos de combate auténticos como enfrentamientos de rayos, ataques de prisa y movimientos demasiado rápidos para que los ojos los vean",
+            "Entra en una arena que reacciona a cada acción, incluidos los ataques finales de arrasamiento de planetas",
+            "Observa cómo el entorno responde con un realismo impresionante y deja un rastro de destrucción a tu paso mientras luchas al contenido de tu corazón"
+        ],
+        "images": [
+            "assets/images/dbz/1.jpg",
+            "assets/images/dbz/2.jpg",
+            "assets/images/dbz/3.jpg",
+            "assets/images/dbz/4.jpg",
+            "assets/images/dbz/5.jpg",
+            "assets/images/dbz/6.jpg",
+            "assets/images/dbz/7.jpg",
+            "assets/images/dbz/8.jpg",
+            "assets/images/dbz/9.jpg",
+            "assets/images/dbz/10.jpg",
+            "assets/images/dbz/11.jpg",
+            "assets/images/dbz/12.jpg",
+            "assets/images/dbz/13.jpg"
+
+        ]
+    },
+    {
+        "id": 5,
+        "titulo": "astro-bot",
+        "name":"Astro Bot",
+        "category":"Plataforma",
+        "material":"Plastico",
+        "weight":"1,41 Onzas",
+        "subCategory":"Play Station 5",
+        "descripcion": "La Nave nodriza PS5® se ha dañado, dejándolo a ASTRO y su tripulación robótica dispersos por todas las galaxias. Es hora de pilotear tu fiel DualSpeeder por más de 50 planetas llenos de diversión, peligro y sorpresas. En el trayecto, aprovecha al máximo los nuevos poderes de ASTRO y reúnete con muchos héroes icónicos del universo de PlayStation.",
+        "price": 59.99,
+        "about":[
+            "¡Embárcate en una misión galáctica y explora más de 50 planetas en busca de la tripulación perdida de ASTRO!",
+            "Dash, swing y cohete abrirse camino a través de este viaje, con nuevos power-ups.",
+            "Siente que el mundo cobra vida a través de su controlador inalámbrico DualSense.",
+            "¡Forma equipo con los icónicos héroes de PlayStation para salvar la galaxia!"
+        ],
+        "image":"astro/1.jpg",
+        "images": [
+            "assets/images/astro/1.jpg",
+            "assets/images/astro/2.jpg",
+            "assets/images/astro/3.jpg",
+            "assets/images/astro/4.jpg",
+            "assets/images/astro/5.jpg",
+            "assets/images/astro/6.jpg",
+            "assets/images/astro/7.jpg",
+            "assets/images/astro/8.jpg",
+            "assets/images/astro/9.jpg"
+        ]
+    },
+    {
+        "id": 6,
+        "titulo": "Robot Aspirador Inteligente",
+        "descripcion": "Aspiradora robótica con navegación inteligente y control remoto. Limpia de forma automática y eficiente.",
+        "precio": 149.99,
+        "imagenes": [
+            "imagen1_producto6.png",
+            "imagen2_producto6.png",
+            "imagen3_producto6.png",
+            "imagen4_producto6.png",
+            "imagen5_producto6.png"
+        ]
+    },
+    {
+        "id": 7,
+        "titulo": "Zapatillas Deportivas para Running",
+        "descripcion": "Zapatillas ligeras y transpirables, diseñadas para ofrecer un excelente soporte durante la carrera. Suela de goma antideslizante.",
+        "precio": 50.00,
+        "imagenes": [
+            "imagen1_producto7.png",
+            "imagen2_producto7.png",
+            "imagen3_producto7.png",
+            "imagen4_producto7.png",
+            "imagen5_producto7.png"
+        ]
+    },
+    {
+        "id": 8,
+        "titulo": "Tableta Gráfica para Dibujo Digital",
+        "descripcion": "Tableta gráfica con lápiz digital de alta precisión, ideal para ilustración y diseño gráfico. Compatible con la mayoría de software creativo.",
+        "precio": 89.99,
+        "imagenes": [
+            "imagen1_producto8.png",
+            "imagen2_producto8.png",
+            "imagen3_producto8.png",
+            "imagen4_producto8.png",
+            "imagen5_producto8.png"
+        ]
+    },
+    {
+        "id": 9,
+        "titulo": "Kit de Herramientas de 53 Piezas",
+        "descripcion": "Completo kit de herramientas para el hogar y automóviles. Incluye destornilladores, llaves, alicates y más.",
+        "precio": 39.99,
+        "imagenes": [
+            "imagen1_producto9.png",
+            "imagen2_producto9.png",
+            "imagen3_producto9.png",
+            "imagen4_producto9.png",
+            "imagen5_producto9.png"
+        ]
+    },
+    {
+        "id": 10,
+        "titulo": "Smart TV 50'' 4K Ultra HD",
+        "descripcion": "Televisor inteligente con pantalla 4K y sistema operativo Android TV. Accede a tus aplicaciones favoritas y disfruta de la mejor calidad de imagen.",
+        "precio": 399.99,
+        "imagenes": [
+            "imagen1_producto10.png",
+            "imagen2_producto10.png",
+            "imagen3_producto10.png",
+            "imagen4_producto10.png",
+            "imagen5_producto10.png"
+        ]
+    }
+]

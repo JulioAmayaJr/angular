@@ -1,0 +1,105 @@
+<div class="container">
+    <div class="breadcrumbs">
+        <a href="index-1.html"><i class="las la-home"></i></a>
+        <a href="#">Shop</a>
+        <a href="#" class="active">Checkout</a>
+    </div>
+</div>
+
+<!-- cart area -->
+<div class="cart_area section_padding_b">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 col-lg-7 col-md-6">
+                <h4 class="shop_cart_title mb-4 ps-3">detalles de facturación  </h4>
+                <div class="billing_form">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="single_billing_inp">
+                                <label for="first_name">Nombres <span>*</span></label>
+                                <input type="text" id="first_name">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="single_billing_inp">
+                                <label for="last_name">Apellidos <span>*</span></label>
+                                <input type="text" id="last_name">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="single_billing_inp">
+                                <label for="county_region">Pais <span>*</span></label>
+                                <input type="text" id="county_region">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="single_billing_inp">
+                                <label for="street_addr">Direccion <span>*</span></label>
+                                <input type="text" id="street_addr">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="single_billing_inp">
+                                <label for="town_city">Departamento <span>*</span></label>
+                                <input type="text" id="town_city">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="single_billing_inp">
+                                <label for="zip_code">Codigo Postal <span>*</span></label>
+                                <input type="text" id="zip_code">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="single_billing_inp">
+                                <label for="phone_number">Numero de Telefono <span>*</span></label>
+                                <input type="text" id="phone_number">
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-6">
+                <h4 class="shop_cart_title ps-3">Tu pedido</h4>
+                <div class="checkout_order mt-4">
+                    <h4>Producto</h4>
+                    <div *ngFor="let item of cartItems" class="single_check_order">
+                        <div class="checkorder_cont">
+                            <h5>{{ item.name }}</h5>
+                            <p *ngIf="item.size">Tamaño: {{ item.size }}</p>
+                            <p *ngIf="item.color">Color: {{ item.color }}</p>
+                        </div>
+                        <p class="checkorder_qnty">x{{ item.quantity }}</p>
+                        <p class="checkorder_price">${{ item.price.toFixed(2) }}</p>
+                    </div>
+                    <div class="single_check_order subs">
+                        <div class="checkorder_cont subtotal-h">
+                            <h5>Subtotal</h5>
+                        </div>
+                        <p class="checkorder_price">${{ subtotal.toFixed(2) }}</p>
+                    </div>
+                    <div class="single_check_order subs">
+                        <div class="checkorder_cont subtotal-h">
+                            <h5>Envío</h5>
+                        </div>
+                        <p *ngIf="total>=50" class="checkorder_price">Gratis</p>
+                        <p *ngIf="total<50" class="checkorder_price">$3.00</p>
+
+                    </div>
+                    <div class="single_check_order total">
+                        <div class="checkorder_cont">
+                            <h5>Total</h5>
+                        </div>
+                        <p class="checkorder_price">${{ total.toFixed(2) }}</p>
+                    </div>
+                    
+                    <div class="checkorder_btn">
+                        <button class="default_btn rounded w-100" (click)="placeOrder()">Realizar pedido</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
