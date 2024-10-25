@@ -15,9 +15,7 @@ export class ProductViewComponent implements OnInit {
   constructor( private cartService: CartService,private productService:ProductService,private route:ActivatedRoute) { }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      appInit($);
-    }, 50);
+   
 
     this.route.paramMap.subscribe(params => {
       const productName = params.get('product-name');
@@ -34,6 +32,12 @@ export class ProductViewComponent implements OnInit {
         }
       });
     });
+  }
+  ngAfterViewInit(): void {
+    // Mueve la inicialización a AfterViewInit para garantizar que el DOM esté listo
+    setTimeout(() => {
+      appInit($);
+    }, 50);
   }
   quantity: number = 1;
 
