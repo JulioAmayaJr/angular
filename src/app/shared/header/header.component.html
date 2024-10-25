@@ -94,7 +94,7 @@
     <div class="container">
         <div class="d-flex align-items-center justify-content-between">
             <a href="index-2.html" class="mobile_logo d-block d-lg-none">
-                <h4 style="color:white; font-weight: bold; font-size: 25px;">TRENDY<span style="color: black; ">MART</span></h4>
+                <h4 style="color:white; font-weight: bold; font-size: 25px;">GAMEX<span style="color: black; ">STORE</span></h4>
 
             </a>
             <div class="all_category d-none d-lg-block">
@@ -487,7 +487,7 @@
                 <i class="icon-cart"></i>
             </span>
             <span class="icon_text">Cart</span>
-            <span class="pops">8</span>
+            <span  class="pops">{{totalItem}}</span>
         </a>
     </div>
 </div>
@@ -646,91 +646,80 @@
 <div class="mobile_menwrap d-lg-none" id="mobile_catwrap">
     <div class="sub_categories">
         <h5 class="mobile_title">
-            All categories
+            Todas las categorias
             <span class="sidebarclose" id="catclose">
                 <i class="las la-times"></i>
             </span>
         </h5>
 
-        <a href="#" class="singlecats">
-            <span class="img_wrp">
-               <i class="las la-shoe-prints"></i>  
-            </span>
-            <span class="txt">Shoes</span>
-        </a>
+        
 
         <div class="singlecats withsub">
             <span class="img_wrp">
-               <i class="las la-male"></i>
+               <i class="las la-gamepad"></i>
             </span>
-            <span class="txt">Men</span>
+            <span class="txt">Videojuegos</span>
             <span class="wsicon"><i class="las la-angle-right"></i></span>
             <div class="mega_menu">
                 <div class="single_mega_menu">
                     <div class="mega_menu_wrap">
-                        <h4>Hot sale</h4>
+                        <h4>PS4</h4>
                         <div class="mega_categories">
-                            <a href="#">Hoodies $ Sweatshirts</a>
-                            <a href="#">T-Shirt</a>
-                            <a href="#">Men’s Sets</a>
-                            <a href="#">Jacket</a>
-                            <a href="#">Shoes</a>
+                            <a href="#">Acción</a>
+                                        <a href="#">Aventura</a>
+                                        <a href="#">Deportes</a>
+                                        <a href="#">Plataforma</a>
                         </div>
                     </div>
                     <div class="mega_menu_wrap">
-                        <h4>Bottoms</h4>
+                        <h4>PS5</h4>
                         <div class="mega_categories">
-                            <a href="#">Casual Pants</a>
-                            <a href="#">Men’s Sleep & Lounge</a>
-                            <a href="#">Jeans</a>
-                            <a href="#">Shorts</a>
-                            <a href="#">Towel</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single_mega_menu">
-                    <div class="mega_menu_wrap">
-                        <h4>Outerwear $ Jackets</h4>
-                        <div class="mega_categories">
-                            <a href="#">Jacket</a>
-                            <a href="#">Sweaters</a>
-                            <a href="#">Casual Faux Leather</a>
-                            <a href="#">Parks</a>
-                            <a href="#">Jeans</a>
-                        </div>
-                    </div>
-                    <div class="mega_menu_wrap">
-                        <h4>Underwear & Loun</h4>
-                        <div class="mega_categories">
-                            <a href="#">Boxes</a>
-                            <a href="#">Berifs</a>
-                            <a href="#">Long Johns</a>
-                            <a href="#">Men’s Sleep & Lounge</a>
-                            <a href="#">Parks</a>
+                            <a href="#">Acción</a>
+                                        <a href="#">Aventura</a>
+                                        <a href="#">Deportes</a>
+                                        <a href="#">Plataforma</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="single_mega_menu">
                     <div class="mega_menu_wrap">
-                        <h4>Accessories</h4>
+                        <h4>Xbox Series X</h4>
                         <div class="mega_categories">
-                            <a href="#">Scarves</a>
-                            <a href="#">Skullies & Beanies</a>
-                            <a href="#">Casual Faux Leather</a>
-                            <a href="#">Prescription Glasses</a>
-                            <a href="#">Belt</a>
+                            <a href="#">Acción</a>
+                                        <a href="#">Aventura</a>
+                                        <a href="#">Deportes</a>
+                                        <a href="#">Plataforma</a>
                         </div>
                     </div>
                     <div class="mega_menu_wrap">
-                        <h4>Novelty & Special</h4>
+                        <h4>PC Gaming</h4>
                         <div class="mega_categories">
-                            <a href="#">Cosplay Costumes</a>
-                            <a href="#">Stage & Dance Wear</a>
-                            <a href="#">Exotic Apparel</a>
-                            <a href="#">Scarves</a>
-                            <a href="#">Men’s Sets</a>
+                            <a href="#">Acción</a>
+                            <a href="#">Aventura</a>
+                            <a href="#">Deportes</a>
+                            <a href="#">Plataforma</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single_mega_menu">
+                    <div class="mega_menu_wrap">
+                        <h4>Nintendo Switch</h4>
+                        <div class="mega_categories">
+                            <a href="#">Acción</a>
+                            <a href="#">Aventura</a>
+                            <a href="#">Deportes</a>
+                            <a href="#">Plataforma</a>
+                        </div>
+                    </div>
+                    <div class="mega_menu_wrap">
+                        <h4>Nintendo 3DS</h4>
+                        <div class="mega_categories">
+                            <a href="#">Acción</a>
+                                        <a href="#">Aventura</a>
+                                        <a href="#">Deportes</a>
+                                        <a href="#">Plataforma</a>
                         </div>
                     </div>
                 </div>
@@ -782,105 +771,85 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="singlecats">
-            <span class="img_wrp">
-                <i class="las la-female"></i>
-            </span>
-            <span class="txt">Women</span>
-        </a>
-        <a href="#" class="singlecats">
-            <span class="img_wrp">
-                <i class="las la-plug"></i>
-            </span>
-            <span class="txt">Electronisc</span>
-        </a>
+    
         <a href="#" class="singlecats">
             <span class="img_wrp">
                 <i class="las la-headphones"></i>
             </span>
-            <span class="txt">Headphones</span>
+            <span class="txt">Audifonos</span>
         </a>
         <a href="#" class="singlecats">
             <span class="img_wrp">
-                 <i class="icon-watch"></i>
+                 <i class="las la-mouse"></i>
             </span>
-            <span class="txt">Watches</span>
+            <span class="txt">Mousepads</span>
         </a>
         <div class="singlecats withsub">
             <span class="img_wrp">
                  <i class="las la-desktop"></i>
             </span>
-            <span class="txt">Computer</span>
+            <span class="txt">Consolas</span>
             <span class="wsicon"><i class="las la-angle-right"></i></span>
             <div class="mega_menu">
                 <div class="single_mega_menu">
                     <div class="mega_menu_wrap">
-                        <h4>Macbook</h4>
+                        <h4>Play Station</h4>
                         <div class="mega_categories">
-                            <a href="#">Mackbook m1</a>
-                            <a href="#">Mackbook pro</a>
-                            <a href="#">Mackbook air</a>
-                            <a href="#">Mackbook 2015</a>
-                            <a href="#">Mackbook 2020</a>
+                            <a href="#">Play Station 1</a>
+                                        <a href="#">Play Station 2</a>
+                                        <a href="#">Play Station 3</a>
+                                        <a href="#">Play Station 4</a>
+                                        <a href="#">Play Station 5</a>
+                                        <a href="#">Play Station Portable (PSP)</a>
+                                        <a href="#">Play Station Vita</a>
                         </div>
                     </div>
                     <div class="mega_menu_wrap">
-                        <h4>Laptop</h4>
+                        <h4>Xbox</h4>
                         <div class="mega_categories">
-                            <a href="#">Razer</a>
-                            <a href="#">Hp Laptop</a>
-                            <a href="#">Dell Notebook</a>
-                            <a href="#">Asus</a>
-                            <a href="#">Lenovo</a>
+                            <a href="#">Xbox</a>
+                                        <a href="#">Xbox 360</a>
+                                        <a href="#">Xbox One</a>
+                                        <a href="#">Xbox One S</a>
+                                        <a href="#">Xbox One x</a>
+                                        <a href="#">Xbox One Series S</a>
+                                        <a href="#">Xbox One Series x</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="single_mega_menu">
                     <div class="mega_menu_wrap">
-                        <h4>Dasktop</h4>
+                        <h4>Nintendo</h4>
                         <div class="mega_categories">
-                            <a href="#">Brand Dasktop</a>
-                            <a href="#">All in one pc</a>
-                            <a href="#">Mini PC</a>
-                            <a href="#">Customize PC</a>
-                            <a href="#">Dasktop Accessories</a>
+                            <a href="#">Nintendo 64</a>
+<a href="#">GameCube</a>
+<a href="#">Wii</a>
+<a href="#">Wii U</a>
+<a href="#">Nintendo Switch</a>
+<a href="#">Nintendo Switch Lite</a>
+<a href="#">Nintendo Switch OLED</a>
+<a href="#">Game Boy</a>
+<a href="#">Game Boy Color</a>
+<a href="#">Game Boy Advance</a>
+<a href="#">Nintendo DS</a>
+<a href="#">Nintendo 3DS</a>
                         </div>
                     </div>
                     <div class="mega_menu_wrap">
-                        <h4>Monitor</h4>
+                        <h4>Accesorios</h4>
                         <div class="mega_categories">
-                            <a href="#">Samsung</a>
-                            <a href="#">Philips</a>
-                            <a href="#">LG</a>
-                            <a href="#">HP</a>
-                            <a href="#">Xiaomi</a>
+                            <a href="#">Controles</a>
+                            <a href="#">Estaciones de carga</a>
+                            <a href="#">Cascos de realidad virtual</a>
+                            <a href="#">Volantes de carreras</a>
+                            <a href="#">Cámaras</a>
+                            <a href="#">Tarjetas de captura</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="single_mega_menu">
-                    <div class="mega_menu_wrap">
-                        <h4>Accessories</h4>
-                        <div class="mega_categories">
-                            <a href="#">Dasktop Ram</a>
-                            <a href="#">Motherboard</a>
-                            <a href="#">SSD Card</a>
-                            <a href="#">Hard disk</a>
-                            <a href="#">Processor</a>
-                        </div>
-                    </div>
-                    <div class="mega_menu_wrap">
-                        <h4>Gaming</h4>
-                        <div class="mega_categories">
-                            <a href="#">Gaming console</a>
-                            <a href="#">Gaming Chair</a>
-                            <a href="#">Gaming Desk</a>
-                            <a href="#">Gaming Controller</a>
-                            <a href="#">Keyboard</a>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="single_mega_menu brnd">
                     <div class="mega_brands">
                         <a href="#" class="mega_brnd_img">
@@ -929,11 +898,6 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="singlecats">
-            <span class="img_wrp">
-                <i class="las la-mobile"></i>
-            </span>
-            <span class="txt">Mobile</span>
-        </a>
+      
     </div>
 </div>
