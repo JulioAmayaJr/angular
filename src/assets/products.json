@@ -146,67 +146,252 @@
     },
     {
         "id": 6,
-        "titulo": "Robot Aspirador Inteligente",
-        "descripcion": "Aspiradora robótica con navegación inteligente y control remoto. Limpia de forma automática y eficiente.",
-        "precio": 149.99,
-        "imagenes": [
-            "imagen1_producto6.png",
-            "imagen2_producto6.png",
-            "imagen3_producto6.png",
-            "imagen4_producto6.png",
-            "imagen5_producto6.png"
+        "titulo": "super-smash-bros",
+        "name":"Super Smash Bros",
+        "material":"Plastico",
+        "weight":"1,41 Onzas",
+        "category":"Plataforma",
+        "subCategory":"Nintendo Switch",
+        "descripcion": "Super Smash Bros. es una serie de videojuegos de lucha, creada por Masahiro Sakurai, quien dirigió todos los juegos, y distribuida por Nintendo, el cual presenta personajes invitados de franquicias establecidas en Nintendo y otras compañías de videojuegos y ha vendido en total más de 71 millones de unidades.",
+        "price": 49.99,
+        "about":[
+            "Nuevos escenarios y combatientes se unen al reparto combinado de todos los juegos anteriores de Super Smash Bros.",
+            "Desafía a otros en cualquier momento y en cualquier lugar, tanto si estás en el sofá como si te desplazas.",
+            "Juega de la manera que quieras: modo local, en línea, modo televisor, modo semiportátil, modo portátil o incluso con controles de GameCube",
+            "Lucha de forma más rápida e inteligente con técnicas nuevas y otras que ya existían, como el escudo perfecto y el esquive aéreo direccional",
+            "Enfréntate en batallas de 2 a 4 jugadores, o juega contra la computadora."
+        ],
+        "image":"top/1.jpg",
+        "images": [
+            "assets/images/top/1.jpg"
         ]
     },
     {
         "id": 7,
-        "titulo": "Zapatillas Deportivas para Running",
-        "descripcion": "Zapatillas ligeras y transpirables, diseñadas para ofrecer un excelente soporte durante la carrera. Suela de goma antideslizante.",
-        "precio": 50.00,
-        "imagenes": [
-            "imagen1_producto7.png",
-            "imagen2_producto7.png",
-            "imagen3_producto7.png",
-            "imagen4_producto7.png",
-            "imagen5_producto7.png"
+        "titulo": "crash-bandicoot",
+        "name":"Crash Bandicoot",
+        "category":"Plataforma",
+        "subCategory":"Activision",
+        "material":"Plastico",
+        "weight":"1,41 Onzas",
+        "descripcion": "Crash Bandicoot N. Sane Trilogy es una compilación de videojuegos de plataformas de 2017 desarrollada por Vicarious Visions y publicada por Activision",
+        "price": 36.00,
+        "priceDev":"39.99",
+        "discount":"10%",
+        "about":[
+            "¡Tu marsupial favorito, Crash Bandicoot, está de vuelta y está mejorado, fascinado y listo para bailar! Ahora puedes experimentar el crash bandicoot como nunca antes en la gloria gráfica HD totalmente remasterizada",
+            "",
+            ""
+        ],
+        "image":"crash-bandicoot/1.jpg",
+        "images": [
+            "assets/images/crash-bandicoot/1.jpg",
+            "assets/images/crash-bandicoot/2.jpg",
+            "assets/images/crash-bandicoot/3.jpg",
+            "assets/images/crash-bandicoot/4.jpg",
+            "assets/images/crash-bandicoot/5.jpg",
+            "assets/images/crash-bandicoot/6.jpg",
+            "assets/images/crash-bandicoot/7.jpg",
+            "assets/images/crash-bandicoot/8.jpg"
         ]
     },
     {
         "id": 8,
-        "titulo": "Tableta Gráfica para Dibujo Digital",
-        "descripcion": "Tableta gráfica con lápiz digital de alta precisión, ideal para ilustración y diseño gráfico. Compatible con la mayoría de software creativo.",
-        "precio": 89.99,
-        "imagenes": [
-            "imagen1_producto8.png",
-            "imagen2_producto8.png",
-            "imagen3_producto8.png",
-            "imagen4_producto8.png",
-            "imagen5_producto8.png"
+        "titulo": "final-fantasy-7",
+        "name":"Final Fantasy 7",
+        "category":"Plataforma",
+        "subCategory":"SquareEnix",
+        "material":"Plastico",
+        "weight":"1,41 Onzas",
+        "descripcion": "Final Fantasy 7 es un videojuego de plataformas desarrollado por Square Enix y publicado por Nintendo. Final Fantasy 7 es el último juego de la saga de Final Fantasy, que comenzó con Final Fantasy IV y terminó con Final Fantasy VII.",
+        "price": 56,
+        "priceDev": "69.99",
+        "discount": "20%",
+        "about":[
+            "¡Este juego es el último en la saga de Final Fantasy! ¡Con un nuevo juego de Final Fantasy 7 y una nueva historia, ¡Final Fantasy 7 es la última aventura de la saga de Final Fantasy!",
+            "¡Nuevos personajes, nuevas aventuras, nuevos poderes y nuevas habilidades! ¡Final Fantasy 7 es la última aventura de la saga de Final Fantasy!",
+            "¡Nuevos personajes, nuevas aventuras, nuevos poderes y nuevas habilidades! ¡Final Fantasy 7 es la última aventura de la saga de Final Fantasy!"
+        ],
+        "image":"top/3.jpg",
+        "images": [
+            "assets/images/final-fantasy-7/1.jpg",
+            "assets/images/final-fantasy-7/2.jpg",
+            "assets/images/final-fantasy-7/3.jpg",
+            "assets/images/final-fantasy-7/4.jpg",
+            "assets/images/final-fantasy-7/5.jpg",
+            "assets/images/final-fantasy-7/6.jpg",
+            "assets/images/final-fantasy-7/7.jpg"
         ]
     },
     {
         "id": 9,
-        "titulo": "Kit de Herramientas de 53 Piezas",
-        "descripcion": "Completo kit de herramientas para el hogar y automóviles. Incluye destornilladores, llaves, alicates y más.",
-        "precio": 39.99,
-        "imagenes": [
-            "imagen1_producto9.png",
-            "imagen2_producto9.png",
-            "imagen3_producto9.png",
-            "imagen4_producto9.png",
-            "imagen5_producto9.png"
+        "titulo": "nintendo-switch",
+        "name":"Nintendo Switch",
+        "category":"Console",
+        "subCategory":"Nintendo Switch",
+        "material":"Plastico",
+        "weight":"1,41 Onzas",
+        "descripcion": "Nintendo Switch es un sistema de juegos y aplicaciones de videojuegos diseñado para la consola de computadora. Es el sistema de juegos más popular en el mundo y se utiliza en una gran cantidad de consolas y teléfonos.",
+        "price": 291.42,
+        "priceDev": "299.99",
+        "discount": "10%",
+        "about":[
+            "Pantalla LCD de 6.2",
+            "Tres modos de reproducción: TV, mesa y mano",
+            "Cooperativo local, multijugador inalámbrico en línea y local",
+            "Controladores Joy-Con desmontables",
+            "Nintendo Switch es el hogar de Mario y sus amigos"
+        ],
+        "image":"top/nintendo-switch.jpg",
+        "images": [
+            "assets/images/nintendo-switch/1.jpg",
+            "assets/images/nintendo-switch/2.jpg",
+            "assets/images/nintendo-switch/3.jpg",
+            "assets/images/nintendo-switch/4.jpg",
+            "assets/images/nintendo-switch/5.jpg"
         ]
     },
     {
         "id": 10,
-        "titulo": "Smart TV 50'' 4K Ultra HD",
-        "descripcion": "Televisor inteligente con pantalla 4K y sistema operativo Android TV. Accede a tus aplicaciones favoritas y disfruta de la mejor calidad de imagen.",
-        "precio": 399.99,
-        "imagenes": [
-            "imagen1_producto10.png",
-            "imagen2_producto10.png",
-            "imagen3_producto10.png",
-            "imagen4_producto10.png",
-            "imagen5_producto10.png"
+        "titulo": "playstation-4",
+        "name":"PlayStation 4",
+        "category":"Console",
+        "subCategory":"Sony",
+        "material":"Plastico",
+        "weight":"7.55 lbs",
+        "descripcion": "PlayStation 4 es un sistema de juegos y aplicaciones de videojuegos diseñado para la consola de computadora. Es el sistema de juegos más popular en el mundo y se utiliza en una gran cantidad de consolas y teléfonos.",
+        "price": 270,
+        "priceDev": "299.99",
+        "discount": "10%",
+        "about":[
+            "Este es un producto reacondicionado certificado en Amazon Renewed. Los productos reacondicionados certificados son probados y certificados para verse y funcionar como nuevos, sin desgaste limitado o nulo, por un reacondicionador externo. El proceso de renovación incluye pruebas de funcionalidad, inspección cosmética y reempaquetado. El producto está respaldado por una garantía mínima de 90 días y puede llegar en una caja genérica marrón o blanca.",
+            "El sistema PlayStation 4 abre la puerta a un viaje increíble a través de nuevos mundos inmersivos y te permite convertirte en el héroe de tu propia historia épica. Con juegos conectados dinámicos, personalización inteligente, capacidades sociales profundamente integradas e innovadoras funciones de segunda pantalla en juegos habilitados, puedes superar los límites del juego con un sistema inspirado en el desarrollador, centrado en los jugadores.",
+            "El sistema PS4 se centra en el jugador, asegurando que los mejores juegos y las experiencias más inmersivas sean posibles en la plataforma. El sistema PS4 permite a los mejores desarrolladores de juegos del mundo desbloquear su creatividad y superar los límites del juego a través de un sistema que está sintonizado específicamente a sus necesidades.",
+            "El sistema PS4 se centra en un potente chip personalizado que contiene ocho núcleos x86-64 y un procesador gráfico TFLOPS de 1.84 de última generación con 8 GB de memoria unificada GDDR5 ultrarrápida, facilitando la creación de juegos y aumentando la riqueza de contenido alcanzable en la plataforma. El resultado final son nuevos juegos con gráficos ricos y de alta fidelidad y experiencias profundamente inmersivas."
+        ],
+        "image":"top/playstation-4.jpg",
+        "images": [
+            "assets/images/playstation4/1.jpg",
+            "assets/images/playstation4/2.jpg",
+            "assets/images/playstation4/3.jpg",
+            "assets/images/playstation4/4.jpg",
+            "assets/images/playstation4/5.jpg",
+            "assets/images/playstation4/6.jpg",
+            "assets/images/playstation4/7.jpg",
+            "assets/images/playstation4/8.jpg"
+        ]
+    },{
+        "id": 11,
+        "titulo": "xbox-one-s",
+        "name":"Xbox One S",
+        "category":"Console",
+        "subCategory":"Microsoft",
+        "material":"Plastico",        
+        "weight":"1,41 lbs",
+        "descripcion": "Este producto se inspecciona, prueba y reacondiciona según sea necesario para que sea completamente funcional de acuerdo con los estándares de Amazon Renewed.",
+        "price": 299.99,
+        "about" : [
+            "Este producto reacondicionado certificado ha sido probado y certificado para que parezca y funcione como nuevo. El proceso de renovación incluye pruebas de funcionalidad, limpieza básica, inspección y reembalaje. El producto se envía con todos los accesorios pertinentes, una garantía mínima de 90 días y puede llegar en una caja genérica. Sólo los vendedores seleccionados que mantienen una barra de alto rendimiento pueden ofrecer productos reacondicionados certificados en Amazon.com."
+        ],
+        "image":"top/xbox-one-s.jpg",
+        "images": [
+            "assets/images/top/xbox-one-s.jpg"
+        ]
+    },
+    {
+        "id": 12,
+        "titulo": "razer-wolverine-v2",
+        "name":"Razer Wolverine V2",
+        "category":"Control",
+        "subCategory":"Microsoft",
+        "material":"Plastico",
+        "weight":"9,6 onzas",
+        "descripcion": "",
+        "price": 60,
+        "priceDev": "68.50",
+        "discount": "10%",
+        "about" : [
+            "Diseñado para un mayor control y precisión: la ergonomía del controlador proporciona un agarre natural que garantiza una interacción ágil y precisa del botón. El diseño contorneado y los agarres de goma antideslizantes permiten jugar todo el día con el máximo rendimiento.",
+            "Botones frontales adicionales reasignables: 2 botones multifunción en la parte delantera del controlador se pueden reasignar a través de Razer Controller Setup for Xbox para ofrecerte un mayor control y un estilo de juego más personalizado.",
+            "Botones de acción mecánica y almohadilla en D: utiliza una actuación hipersensible con un toque acolchado al ejecutar movimientos.",
+            "Modo de gatillo al pelo con interruptores de parada del gatillo: para una ventaja competitiva, activa el modo de gatillo al pelo a través de dos bloqueos deslizantes en la parte inferior del controlador que reducen en gran medida la distancia de recorrido hasta los gatillos principales, lo que permite una velocidad de disparo ultrarrápida."
+        ],
+        "image":"top/razer-wolverine-v2.jpg",
+        "images": [
+            "assets/images/razer-wolverine-v2/1.jpg",
+            "assets/images/razer-wolverine-v2/2.jpg",
+            "assets/images/razer-wolverine-v2/3.jpg",
+            "assets/images/razer-wolverine-v2/4.jpg"
+        ]
+    },
+    {
+        "id": 13,
+        "titulo": "playstation-digital",
+        "name":"Playstation Digital",
+        "category":"Control",
+        "subCategory":"Sony",
+        "material":"Plastico",
+        "weight":"1,41 Onzas",
+        "descripcion": "Playstation Digital es un controlador de juegos de plataformas desarrollado por Sony y publicado por Sony. Plsyastation Digital es el segundo controlador de Sony, el primero es el DualSense.",
+        "price": 49.99,
+        "about":[
+            "¡Este controlador de juegos de plataformas es el segundo controlador de Sony, el primero es el DualSense!"
+        ],
+        "image":"top/mando2.jpg",
+        "images": [
+            "assets/images/top/mando2.jpg"
+        ]
+    },
+    {
+        "id": 14,
+        "titulo": "control-nintendo-switch",
+        "name":"Control Nintendo Switch",
+        "category":"Control",
+        "subCategory":"Nintendo",
+        "material":"Plastico",
+        "weight":"1,41 Onzas",
+        "descripcion": "Control Nintendo Switch es un controlador de juegos de plataformas desarrollado por Nintendo y publicado por Nintendo. Control Nintendo Switch es el controlador de juegos de plataformas más popular en el mundo y se utiliza en una gran cantidad de consolas y teléfonos.",
+        "price": 45.00,
+        "about":[
+            "Amplia compatibilidad: el controlador Switch funciona con Nintendo Switch/Lite/OLED, dispositivos Apple (iPhone, iPad, Mac, TV, Apple Arcade MFi Games), dispositivos Android (teléfono, tableta, Android TV, cajas de TV), PC/portátil (Windows 7 8 9 10 11) y Steam.",
+            "Conexión Bluetooth rápida: el controlador Nintendo Switch se puede emparejar fácilmente con Switch, teléfono móvil (iOS/Android), Mac, tableta, PC o TV (Android/Apple/Fire Stick) con un Bluetooth incorporado a través de conexión Bluetooth",
+            "Programable: el controlador de juego Bluetooth cuenta con 2 botones programables que pueden mapear A/B/X/Y/L/R/ZL/ZR/Left Joystick/Right Joystick/D-pad/+/- a AR/AL y grabar hasta 30 segundos de la operación de juego, lo que hace que sea aún más fácil ganar el juego",
+            "Controles de movimiento: con el sensor giroscópico de 6 ejes, este controlador de juego te permite utilizar los controles de movimiento para apuntar o hacer otros movimientos cuando estás jugando juegos en un Switch, teléfono móvil, PC o incluso en la televisión"
+        ],
+        "image": "",
+        "images": [
+            "assets/images/control-switch/1.jpg",
+            "assets/images/control-switch/2.jpg",
+            "assets/images/control-switch/3.jpg",
+            "assets/images/control-switch/4.jpg",
+            "assets/images/control-switch/5.jpg",
+            "assets/images/control-switch/6.jpg",
+            "assets/images/control-switch/7.jpg",
+            "assets/images/control-switch/8.jpg"
+        ]
+    },
+    {
+        "id": 15,
+        "titulo": "bengo-g9000",
+        "name":"Bengo G9000",
+        "category":"Audifonos",
+        "subCategory":"Bengoo",
+        "material":"Plastico",
+        "weight":"1,41 Onzas",
+        "descripcion": "Bengo G9000 es un dispositivo de audifono de alta gama que se utiliza para reproducir audio en el entorno de juegos. Este dispositivo es compatible con la mayoría de los sistemas de juegos y puede ser utilizado para reproducir audio en juegos de plataformas como Super Smash Bros, Call of Duty, Battlefield, FIFA, etc.",
+        "price": 22.99,
+        "about":[
+            "Compatible con múltiples plataformas: compatible con PlayStation 4, nueva Xbox One, PC, Nintendo 3DS, laptop, PSP, tableta, iPad, computadora, teléfono móvil. Tenga en cuenta que necesita un adaptador Microsoft adicional (no incluido) cuando se conecta con un controlador Xbox One versión antigua.",
+            "Subwoofer estéreo envolvente: sonido claro que funciona con latón fuerte, espléndido aislamiento de ruido ambiental y controlador de neodimio magnético de alta precisión de 1.575 pulgadas, precisión de posicionamiento acústico mejora la sensibilidad de la unidad de altavoz, lo que te ofrece un campo de sonido vívido, claridad de sonido, sonido de sensación de impacto. Perfecto para varios juegos como Halo 5 Guardians, Metal Gear Solid, Call of Duty, Star Wars Battlefront, Overwatch, World of Warcraft Legion, etc."
+        ],
+        "image":"top/1.jpg",
+        "images": [
+            "assets/images/bengo-g9000/1.jpg",
+            "assets/images/bengo-g9000/2.jpg",
+            "assets/images/bengo-g9000/3.jpg",
+            "assets/images/bengo-g9000/4.jpg",
+            "assets/images/bengo-g9000/5.jpg",
+            "assets/images/bengo-g9000/6.jpg"
         ]
     }
 ]
