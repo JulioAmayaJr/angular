@@ -3,11 +3,13 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
 import {map, catchError} from 'rxjs/operators';
+import { BehaviorSubject, throwError } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-
+  private loggedIn = new BehaviorSubject<boolean>(false);
+  isLoggedIn$ = this.loggedIn.asObservable();
   user:any;
   token:any='';
   constructor(
@@ -33,12 +35,13 @@ export class AuthService {
       map((res:any)=>{
         if(res.access_token){
           return this.saveLocalStorageResponse(res);
+          this.loggedIn.next(true);
         }else{
           return res;
         }
       }),
-      catchError((err:any)=>{
-        return err;
+      catchError((err: any) => {
+        return throwError(err); 
       })
     );;
   }
@@ -54,9 +57,17 @@ export class AuthService {
     return false;
   }
 
-  register(email:String,password:String){
+  register(name:String,email:String,password:String,id_rol:number){
     let URL= environment.URL_SERVICES + '/users/register';
-    return this.http.post(URL,{email,password});
+    return this.http.post(URL,{name,email,password,id_rol}).pipe(
+      map((res:any)=>{
+          return res;
+        
+      }),
+      catchError((err: any) => {
+        return throwError(err); 
+      })
+    );
   }
 
   logout(){

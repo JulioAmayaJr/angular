@@ -11,17 +11,26 @@ declare function appInit([]): any;
 export class ShoppingCartComponent implements OnInit {
   cartItems: any[] = [];
   total: number = 0;
+  subTotal:number=0;
   constructor(private cartService:CartService) { }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      appInit($);
-    }, 50); 
+    
     this.cartService.cartItems$.subscribe(items => {
       this.cartItems = items;
+      this.calculateSubTotal();
       this.calculateTotal();
     });
   }
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      appInit($);
+    }, 50);
+  }
+  calculateSubTotal():void{
+    this.subTotal=this.cartItems.reduce((sum,item)=>sum+(item.price*item.quantity),0);
+  }
+
   calculateTotal(): void {
     this.total = this.cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     if(this.total<50){

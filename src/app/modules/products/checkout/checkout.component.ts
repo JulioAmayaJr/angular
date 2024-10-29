@@ -5,6 +5,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CartService } from '../../auth-profile/_services/cart.service';
 
 import { Router } from '@angular/router';
+import { AuthService } from '../../auth-profile/_services/auth.service';
 declare var $: any;
 declare function appInit([]): any;
 
@@ -19,19 +20,25 @@ export class CheckoutComponent implements OnInit {
   total: number = 0;
   termsAccepted: boolean = false; 
   billingForm!: FormGroup;
+  isLoading = true; 
 
-  constructor(private cartService:CartService,private router: Router) { }
+  constructor(private cartService:CartService,private router: Router,private authService:AuthService) { }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      appInit($);
-    }, 50);
-   
-    this.cartService.cartItems$.subscribe(items => {
-      this.cartItems = items;
-      this.calculateSubTotal();
-      this.calculateTotal();
-    });
+    if (!this.authService.user) {
+      this.router.navigate(['/auth/login']);
+    } else {
+      setTimeout(() => {
+        appInit($);
+      }, 50);
+      
+      this.cartService.cartItems$.subscribe(items => {
+        this.cartItems = items;
+        this.calculateSubTotal();
+        this.calculateTotal();
+      });
+    }
+    this.isLoading = false;
   }
   calculateSubTotal():void{
     this.subtotal=this.cartItems.reduce((sum,item)=>sum+(item.price*item.quantity),0)

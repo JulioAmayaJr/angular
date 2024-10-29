@@ -16,61 +16,61 @@
                         <h4 class="filter_title">Sort by</h4>
                         <div class="sorting_filter mb-2">
                             <select class="nice_select">
-                                <option value="">Default sorting</option>
-                                <option value="">Price low-high</option>
-                                <option value="">Price high-low</option>
+                                <option value="">Clasificacion predeterminada</option>
+                                <option value="">Precio bajo-alto</option>
+                                <option value="">Precio alto-bajo</option>
                             </select>
                         </div>
                     </div>
                     
                     <div class="shop_filter">
-                        <h4 class="filter_title">Categories</h4>
+                        <h4 class="filter_title">Categorias</h4>
                         <div class="filter_list">
                             <div class="custom_check d-flex align-items-center">
                                 <input for="cat-women" type="checkbox" class="check_inp"  id="cat-women" >
-                                <span style="margin-left: 4px;"> Women</span>
+                                <span style="margin-left: 4px;"> Accion</span>
                                 <p class="mb-0 ms-auto">(16)</p>
                             </div>
                             <div class="custom_check d-flex align-items-center">
                                 <input type="checkbox" class="check_inp" id="cat-men">
-                                <span>Men</span>
+                                <span style="margin-left: 4px;">Aventura</span>
                                 <p class="mb-0 ms-auto">(9)</p>
                             </div>
                             <div class="custom_check d-flex align-items-center">
-                                <input type="checkbox" class="check_inp" hidden id="cat-shoes">
-                                <label for="cat-shoes">Shoes</label>
+                                <input type="checkbox" class="check_inp"  id="cat-shoes">
+                                <span style="margin-left: 4px;">Deporte</span>
                                 <p class="mb-0 ms-auto">(19)</p>
                             </div>
                             <div class="custom_check d-flex align-items-center">
-                                <input type="checkbox" class="check_inp" hidden id="cat-computer">
-                                <label for="cat-computer">Computer</label>
+                                <input type="checkbox" class="check_inp" id="cat-computer" checked>
+                                <span style="margin-left: 4px;">Plataforma</span>
                                 <p class="mb-0 ms-auto">(35)</p>
                             </div>
                         </div>
                     </div>
                     <div class="shop_filter">
-                        <h4 class="filter_title">Brands</h4>
+                        <h4 class="filter_title">Consolas</h4>
                         <div class="filter_list">
                             <div class="custom_check d-flex align-items-center">
-                                <input type="checkbox" class="check_inp" hidden id="bnd-adidas" checked>
-                                <label for="bnd-adidas">Adidas</label>
+                                <input type="checkbox" class="check_inp"  id="bnd-adidas">
+                                <span style="margin-left: 4px;">PS4</span>
                             </div>
                             <div class="custom_check d-flex align-items-center">
-                                <input type="checkbox" class="check_inp" hidden id="bnd-nike">
-                                <label for="bnd-nike">Nike</label>
+                                <input type="checkbox" class="check_inp"  id="bnd-nike">
+                                <span style="margin-left: 4px;">PS5</span>
                             </div>
                             <div class="custom_check d-flex align-items-center">
-                                <input type="checkbox" class="check_inp" hidden id="bnd-easy">
-                                <label for="bnd-easy">Easy</label>
+                                <input type="checkbox" class="check_inp" id="bnd-easy">
+                                <span style="margin-left: 4px;">Nintendo Switch</span>
                             </div>
                             <div class="custom_check d-flex align-items-center">
-                                <input type="checkbox" class="check_inp" hidden id="bnd-arong">
-                                <label for="bnd-arong">Arong</label>
+                                <input type="checkbox" class="check_inp" id="bnd-arong">
+                                <span style="margin-left: 4px;">Xbox One</span>
                             </div>
                         </div>
                     </div>
                     <div class="shop_filter">
-                        <h4 class="filter_title">Price</h4>
+                        <h4 class="filter_title">Precio</h4>
                         <div class="price-range-slider">
                             <div id="slider-range" class="range-bar"></div>
                             <p class="range-value">
@@ -78,7 +78,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="shop_filter">
+                    <div class="shop_filter" hidden>
                         <h4 class="filter_title">Size</h4>
                         <div class="size_selector d-flex">
                             <div class="single_size_opt">
@@ -103,7 +103,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="shop_filter border-bottom-0 pb-0 mb-0">
+                    <div class="shop_filter border-bottom-0 pb-0 mb-0" hidden>
                         <h4 class="filter_title">Color</h4>
                         <div class="size_selector color_selector d-flex align-items-center">
                             <div class="single_size_opt">
@@ -124,6 +124,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="product_list_btns" style="display: flex; justify-content: center; align-items: center;">
+                        <button class="list_product_btn">
+                            <span class="icon"><i class="icon-search-left"></i></span> Filtrar
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-9 col-lg-8">
@@ -131,11 +137,11 @@
                     <div class="d-block d-lg-none">
                         <button class="default_btn py-2 me-3 rounded" id="mobile_filter_btn">Filter</button>
                     </div>
-                    <div class="sorting_filter d-none d-sm-block">
+                    <div class="sorting_filter d-none d-sm-block" >
                         <select class="nice_select">
-                            <option value="">Default sorting</option>
-                            <option value="">Price low-high</option>
-                            <option value="">Price high-low</option>
+                            <option value="">Predeterminado</option>
+                            <option value="">Precio bajo-alto</option>
+                            <option value="">Precio alto-bajo</option>
                         </select>
                     </div>
                     <div class="view_filter d-flex align-items-center ms-auto">
@@ -155,21 +161,21 @@
                                 <div class="col-md-4">
                                     <div class="list_product_img">
                                         <div class="lp_img">
-                                            <a href="product-view.html">
-                                                <img loading="lazy"  src="assets/images/headphone-2.png" alt="product">
+                                            <a routerLink="/product/product-view/Super-Mario-Party-Jamboree">
+                                                <img loading="lazy"  src="assets/images/super-mario-party/1.jpg" alt="product">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="product_content">
-                                        <a href="product-view.html">
-                                            <h5>COWIN E7 Active</h5>
+                                        <a routerLink="/product/product-view/Super-Mario-Party-Jamboree">
+                                            <h5>Super Mario Party Jamboree</h5>
                                         </a>
                                         <div class="ratprice">
                                             <div class="price">
-                                                <span class="org_price">$45.00</span>
-                                                <span class="prev_price">$55.45</span>
+                                                <span class="org_price">$31.74</span>
+                                                <span class="prev_price">$63.49</span>
                                             </div>
                                             <div class="rating">
                                                 <div class="d-flex align-items-center justify-content-start">
@@ -180,16 +186,15 @@
                                                         <span><i class="las la-star"></i></span>
                                                         <span><i class="las la-star"></i></span>
                                                     </div>
-                                                    <p class="rating_count">(150)</p>
+                                                    <p class="rating_count">(10,786)</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <p class="product_list_desc">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus 
-                                            blandit massa enim.
+                                            Se trata de la decimotercera entrega para consolas domésticas de la serie Mario Party, la tercera para Nintendo Switch y el sucesor de Super Mario Party.
                                         </p>
                                         <div class="product_list_btns">
-                                            <button class="list_product_btn"><span class="icon"><i class="icon-cart"></i></span> Add to Cart</button>
+                                            <button class="list_product_btn"><span class="icon"><i class="icon-cart"></i></span> Agregar al carrito</button>
                                             <button class="list_product_btn wish"><span class="icon"><i class="icon-heart"></i></span> Wishlist</button>
                                         </div>
                                     </div>

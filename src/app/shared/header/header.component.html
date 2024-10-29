@@ -155,7 +155,7 @@
                                         <a href="#">Acción</a>
                                         <a href="#">Aventura</a>
                                         <a href="#">Deportes</a>
-                                        <a href="#">Plataforma</a>
+                                        <a routerLink="/product/shop-list">Plataforma</a>
                                     </div>
                                 </div>
                             </div>
@@ -424,9 +424,9 @@
                     </a>
                     <div class="myacc_cont">
                         <div class="ac_join">
-                            <p *ngIf="user">Welcome {{user.name}} Shop</p>
-                            <p *ngIf="!user">Welcome to </p>
-                            <div class="account_btn d-flex justify-content-between">
+                            <p *ngIf="user!=null">Bienvenido {{user.name}} a GamexStore </p>
+                            <p *ngIf="user==null">GamexStore</p>
+                            <div class="account_btn d-flex justify-content-between" *ngIf="user==null">
                                <a routerLink="/auth/register"  class="default_btn">Join</a>
                                 <a routerLink="/auth/login"   class="default_btn second">Sign in</a>
                             </div>
@@ -710,7 +710,7 @@
                             <a href="#">Acción</a>
                             <a href="#">Aventura</a>
                             <a href="#">Deportes</a>
-                            <a href="#">Plataforma</a>
+                            <a routerLink="/product/shop-list">Plataforma</a>
                         </div>
                     </div>
                     <div class="mega_menu_wrap">

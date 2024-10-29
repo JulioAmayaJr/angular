@@ -34,7 +34,6 @@ export class ProductViewComponent implements OnInit {
     });
   }
   ngAfterViewInit(): void {
-    // Mueve la inicialización a AfterViewInit para garantizar que el DOM esté listo
     setTimeout(() => {
       appInit($);
     }, 50);

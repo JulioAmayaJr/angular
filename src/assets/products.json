@@ -146,28 +146,53 @@
     },
     {
         "id": 6,
-        "titulo": "Robot Aspirador Inteligente",
-        "descripcion": "Aspiradora robótica con navegación inteligente y control remoto. Limpia de forma automática y eficiente.",
-        "precio": 149.99,
-        "imagenes": [
-            "imagen1_producto6.png",
-            "imagen2_producto6.png",
-            "imagen3_producto6.png",
-            "imagen4_producto6.png",
-            "imagen5_producto6.png"
+        "titulo": "super-smash-bros",
+        "name":"Super Smash Bros",
+        "material":"Plastico",
+        "weight":"1,41 Onzas",
+        "category":"Plataforma",
+        "subCategory":"Nintendo Switch",
+        "descripcion": "Super Smash Bros. es una serie de videojuegos de lucha, creada por Masahiro Sakurai, quien dirigió todos los juegos, y distribuida por Nintendo, el cual presenta personajes invitados de franquicias establecidas en Nintendo y otras compañías de videojuegos y ha vendido en total más de 71 millones de unidades.",
+        "price": 49.99,
+        "about":[
+            "Nuevos escenarios y combatientes se unen al reparto combinado de todos los juegos anteriores de Super Smash Bros.",
+            "Desafía a otros en cualquier momento y en cualquier lugar, tanto si estás en el sofá como si te desplazas.",
+            "Juega de la manera que quieras: modo local, en línea, modo televisor, modo semiportátil, modo portátil o incluso con controles de GameCube",
+            "Lucha de forma más rápida e inteligente con técnicas nuevas y otras que ya existían, como el escudo perfecto y el esquive aéreo direccional",
+            "Enfréntate en batallas de 2 a 4 jugadores, o juega contra la computadora."
+        ],
+        "image":"top/1.jpg",
+        "images": [
+            "assets/images/top/1.jpg"
         ]
     },
     {
         "id": 7,
-        "titulo": "Zapatillas Deportivas para Running",
-        "descripcion": "Zapatillas ligeras y transpirables, diseñadas para ofrecer un excelente soporte durante la carrera. Suela de goma antideslizante.",
-        "precio": 50.00,
-        "imagenes": [
-            "imagen1_producto7.png",
-            "imagen2_producto7.png",
-            "imagen3_producto7.png",
-            "imagen4_producto7.png",
-            "imagen5_producto7.png"
+        "titulo": "crash-bandicoot",
+        "name":"Crash Bandicoot",
+        "category":"Plataforma",
+        "subCategory":"Activision",
+        "material":"Plastico",
+        "weight":"1,41 Onzas",
+        "descripcion": "Crash Bandicoot N. Sane Trilogy es una compilación de videojuegos de plataformas de 2017 desarrollada por Vicarious Visions y publicada por Activision",
+        "price": 36.00,
+        "priceDev":"39.99",
+        "discount":"10%",
+        "about":[
+            "¡Tu marsupial favorito, Crash Bandicoot, está de vuelta y está mejorado, fascinado y listo para bailar! Ahora puedes experimentar el crash bandicoot como nunca antes en la gloria gráfica HD totalmente remasterizada",
+            "",
+            ""
+        ],
+        "image":"crash-bandicoot/1.jpg",
+        "images": [
+            "assets/images/crash-bandicoot/1.jpg",
+            "assets/images/crash-bandicoot/2.jpg",
+            "assets/images/crash-bandicoot/3.jpg",
+            "assets/images/crash-bandicoot/4.jpg",
+            "assets/images/crash-bandicoot/5.jpg",
+            "assets/images/crash-bandicoot/6.jpg",
+            "assets/images/crash-bandicoot/7.jpg",
+            "assets/images/crash-bandicoot/8.jpg"
         ]
     },
     {
