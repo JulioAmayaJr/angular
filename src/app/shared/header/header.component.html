@@ -110,212 +110,45 @@
                     </h5>
                     
 
-                    <div class="singlecats withsub">
+                    <div *ngFor="let category of categories" class="singlecats" [ngClass]="{'withsub': category.firstSubcategories && category.firstSubcategories.length > 0}">
                         <span class="img_wrp">
-                            <i class="las la-gamepad"></i>
+                          <i class="{{category.icon}}"></i>
                         </span>
-                        <span class="txt">Videojuegos</span>
-                        <span class="wsicon"><i class="las la-angle-right"></i></span>
-                        <div class="mega_menu">
-                            <div class="single_mega_menu">
-                                <div class="mega_menu_wrap">
-                                    <h4>PS4</h4>
-                                    <div class="mega_categories">
-                                        <a href="#">Acción</a>
-                                        <a href="#">Aventura</a>
-                                        <a href="#">Deportes</a>
-                                        <a href="#">Plataforma</a>
-                                        
-                                    </div>
-                                </div>
-                                <div class="mega_menu_wrap">
-                                    <h4>PS5</h4>
-                                    <div class="mega_categories">
-                                        <a href="#">Acción</a>
-                                        <a href="#">Aventura</a>
-                                        <a href="#">Deportes</a>
-                                        <a href="#">Plataforma</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="single_mega_menu">
-                                <div class="mega_menu_wrap">
-                                    <h4>Xbox Series X</h4>
-                                    <div class="mega_categories">
-                                        <a href="#">Acción</a>
-                                        <a href="#">Aventura</a>
-                                        <a href="#">Deportes</a>
-                                        <a href="#">Plataforma</a>
-                                    </div>
-                                </div>
-                                <div class="mega_menu_wrap">
-                                    <h4>Nintendo Switch</h4>
-                                    <div class="mega_categories">
-                                        <a href="#">Acción</a>
-                                        <a href="#">Aventura</a>
-                                        <a href="#">Deportes</a>
-                                        <a routerLink="/product/shop-list">Plataforma</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="single_mega_menu">
-                                <div class="mega_menu_wrap">
-                                    <h4>Nintendo 3DS</h4>
-                                    <div class="mega_categories">
-                                        <a href="#">Acción</a>
-                                        <a href="#">Aventura</a>
-                                        <a href="#">Deportes</a>
-                                        <a href="#">Plataforma</a>
-                                    </div>
-                                </div>
-                                <div class="mega_menu_wrap">
-                                    <h4>PC Gaming</h4>
-                                    <div class="mega_categories">
-                                        <a href="#">Acción</a>
-                                        <a href="#">Aventura</a>
-                                        <a href="#">Deportes</a>
-                                        <a href="#">Plataforma</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single_mega_menu brnd">
-                                <div class="mega_brands">
-                                    <a href="#" class="mega_brnd_img">
-                                        <img loading="lazy"  src="assets/images/logos/ps4.png" alt="brand">
-                                    </a>
-                                    <a href="#" class="mega_brnd_img">
-                                        <img loading="lazy"  src="assets/images/logos/ps5.png" alt="brand">
-                                    </a>
-                                    <a href="#" class="mega_brnd_img">
-                                        <img loading="lazy"  src="assets/images/logos/switch.png" alt="brand">
-                                    </a>
-                                    <a href="#" class="mega_brnd_img">
-                                        <img loading="lazy"  src="assets/images/logos/xbox.png" alt="brand">
-                                    </a>
-                                    
-                                 
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <a href="#" class="singlecats">
-                        <span class="img_wrp">
-                            <i class="las la-headphones"></i>
+                        <span class="txt">{{ category.name }}</span>
+                        <span class="wsicon" *ngIf="category.firstSubcategories && category.firstSubcategories.length > 0">
+                          <i class="las la-angle-right"></i>
                         </span>
-                        <span class="txt">Audifonos</span>
-                    </a>
-                    <a href="#" class="singlecats">
-                        <span class="img_wrp">
-                            <i class="las la-mouse"></i>
-                        </span>
-                        <span class="txt">Mousepads</span>
-                    </a>
-                    <div class="singlecats withsub">
-                        <span class="img_wrp">
-                            <i class="las la-desktop"></i>
-                        </span>
-                        <span class="txt">Consolas</span>
-                        <span class="wsicon"><i class="las la-angle-right"></i></span>
-                        <div class="mega_menu">
-                            <div class="single_mega_menu">
-                                <div class="mega_menu_wrap">
-                                    <h4>Play Station</h4>
-                                    <div class="mega_categories">
-                                        <a href="#">Play Station 1</a>
-                                        <a href="#">Play Station 2</a>
-                                        <a href="#">Play Station 3</a>
-                                        <a href="#">Play Station 4</a>
-                                        <a href="#">Play Station 5</a>
-                                        <a href="#">Play Station Portable (PSP)</a>
-                                        <a href="#">Play Station Vita</a>
-
-                                    </div>
+                      
+                        <div class="mega_menu" *ngIf="category.firstSubcategories && category.firstSubcategories.length > 0">
+                            <!-- Iteramos sobre los índices pares directamente -->
+                            <div class="single_mega_menu" *ngFor="let i of getPairIndexes(category.firstSubcategories)">
+                              <div class="mega_menu_wrap">
+                                <h4>{{ category.firstSubcategories[i].name }}</h4>
+                                <div class="mega_categories" *ngFor="let child of category.firstSubcategories[i].children">
+                                  <a [routerLink]="child.action_page">{{ child.name }}</a>
                                 </div>
-                                <div class="mega_menu_wrap">
-                                    <h4>Xbox</h4>
-                                    <div class="mega_categories">
-                                        <a href="#">Xbox</a>
-                                        <a href="#">Xbox 360</a>
-                                        <a href="#">Xbox One</a>
-                                        <a href="#">Xbox One S</a>
-                                        <a href="#">Xbox One x</a>
-                                        <a href="#">Xbox One Series S</a>
-                                        <a href="#">Xbox One Series x</a>
-
-                                    </div>
+                              </div>
+                          
+                              <!-- Segundo mega_menu_wrap solo si existe el elemento impar siguiente -->
+                              <div class="mega_menu_wrap" *ngIf="category.firstSubcategories[i + 1]">
+                                <h4>{{ category.firstSubcategories[i + 1].name }}</h4>
+                                <div class="mega_categories" *ngFor="let child of category.firstSubcategories[i + 1].children">
+                                  <a [routerLink]="child.action_page">{{ child.name }}</a>
                                 </div>
+                              </div>
                             </div>
-
-                            <div class="single_mega_menu">
-                                <div class="mega_menu_wrap">
-                                    <h4>Nintendo</h4>
-                                    <div class="mega_categories">
-                                        
-<a href="#">Nintendo 64</a>
-<a href="#">GameCube</a>
-<a href="#">Wii</a>
-<a href="#">Wii U</a>
-<a href="#">Nintendo Switch</a>
-<a href="#">Nintendo Switch Lite</a>
-<a href="#">Nintendo Switch OLED</a>
-<a href="#">Game Boy</a>
-<a href="#">Game Boy Color</a>
-<a href="#">Game Boy Advance</a>
-<a href="#">Nintendo DS</a>
-<a href="#">Nintendo 3DS</a>
-                                    </div>
-                                </div>
-                            
-                            </div>
-
-                            <div class="single_mega_menu">
-                                <div class="mega_menu_wrap">
-                                    <h4>Accesorios</h4>
-                                    <div class="mega_categories">
-                                        <a href="#">Controles</a>
-<a href="#">Estaciones de carga</a>
-<a href="#">Cascos de realidad virtual</a>
-<a href="#">Volantes de carreras</a>
-<a href="#">Cámaras</a>
-<a href="#">Tarjetas de captura</a>
-
-                                    </div>
-                                </div>
-                               
-                            </div>
-                            <div class="single_mega_menu brnd">
-                                <div class="mega_brands">
-                                    <a href="#" class="mega_brnd_img">
-                                        <img loading="lazy"  src="assets/images/brand-1.png" alt="brand">
-                                    </a>
-                                    <a href="#" class="mega_brnd_img">
-                                        <img loading="lazy"  src="assets/images/brand-2.png" alt="brand">
-                                    </a>
-                                    <a href="#" class="mega_brnd_img">
-                                        <img loading="lazy"  src="assets/images/brand-3.png" alt="brand">
-                                    </a>
-                                    <a href="#" class="mega_brnd_img">
-                                        <img loading="lazy"  src="assets/images/brand-4.png" alt="brand">
-                                    </a>
-                                    <a href="#" class="mega_brnd_img">
-                                        <img loading="lazy"  src="assets/images/brand-5.png" alt="brand">
-                                    </a>
-                                    <a href="#" class="mega_brnd_img">
-                                        <img loading="lazy"  src="assets/images/brand-6.png" alt="brand">
-                                    </a>
-                                    <a href="#" class="mega_brnd_img">
-                                        <img loading="lazy"  src="assets/images/brand-7.png" alt="brand">
-                                    </a>
-                              
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                          </div>
+                          
+                          
+                      </div>
+                      
+                      
+                      
+                    
+                    
+                    
+                    
+                    
                    
                     
                 </div>
@@ -434,23 +267,23 @@
                         <div class="ac_links">
                               <a href="account.html" class="myac">
                                 <i class="lar la-id-card"></i>
-                                My Account
+                                Mi cuenta
                             </a>
                            <a href="account-order-history.html">
                                 <i class="las la-gift"></i>
-                                My Order
+                                Mi pedido
                             </a>
                            <a href="wish-list.html">
                                 <i class="lar la-heart"></i>
-                                My Wishlist
+                                Mi Lista de deseos
                             </a>
-                            <a href="shopping-cart.html">
+                            <a routerLink="/product/shopping-cart">
                                  <i class="icon-cart"></i>
-                                My Cart
+                                Mi carrito
                             </a>
                             <a href="#" onclick="return false;" (click)="logout()">
                                 <i class="las la-power-off"></i>
-                                Log out
+                                Cerrar sesion
                             </a>
                         </div>
                     </div>
@@ -521,9 +354,9 @@
                     <a href="shop-list.html">List View</a>
                     <a href="shop-grid.html">Grid View</a>
                     <a href="shop-grid-2.html">Grid View 2</a>
-                    <a href="wish-list.html">Wishlist</a>
-                    <a href="shopping-cart.html">Shopping cart</a>
-                    <a href="product-view.html">Product view</a>
+                    <a href="wish-list.html">Lista de deseos</a>
+                    <a routerLink="/product/shopping-cart">Carrito</a>
+                    <a routerLink="/product">Product view</a>
                 </div>
             </li>
             <li class="withsub">
